@@ -1,0 +1,43 @@
+.container {
+  position: absolute;
+  display: block;
+  margin-inline: 20%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.row th {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  color: #fff;
+  background-color: rgb(27, 168, 58);
+  border-right: 1px solid hsl(0, 0%, 85%);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.row td {
+  color: grey;
+  border-right: 1px solid hsl(0, 0%, 85%);
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.row > td:first-child {
+  display: grid;
+  text-align: left;
+  width: 100%;
+  padding-left: 30px;
+  grid-template-columns: 10ch;
+  justify-content: center;
+}
+.row :is(th, td) {
+  width: 250px;
+  padding-block: 15px;
+}
+
+.row:nth-child(2n + 2) {
+  background-color: hsl(0, 0%, 95%);
+}
+.row :last-child {
+  border: none;
+}
