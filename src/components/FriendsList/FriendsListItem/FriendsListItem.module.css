@@ -1,0 +1,35 @@
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-inline: 25px 40px;
+  padding-block: 5px;
+  padding-inline-end: 60px;
+  box-shadow: 3px 3px 3px 3px rgba(17, 7, 150, 0.2);
+}
+
+.status {
+  position: absolute;
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  left: 10px;
+}
+.status--online {
+  background-color: green;
+}
+.status--offline {
+  background-color: red;
+}
+
+.avatar {
+  width: 60px;
+  margin-inline: 10px;
+
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
+}
+.name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
